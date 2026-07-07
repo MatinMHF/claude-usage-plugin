@@ -1,0 +1,44 @@
+{
+  "name": "claude-usage-plugin",
+  "version": "2.1.0",
+  "description": "Claude Code plugin: a minimal MCP server that reports your Claude account 5-hour and weekly usage from Claude Code's official rate_limits, captured via a statusLine hook. No restrictions, no limits, no network calls.",
+  "type": "module",
+  "main": "index.js",
+  "bin": {
+    "claude-usage-plugin": "./index.js"
+  },
+  "files": [
+    "index.js",
+    "official.js",
+    "capture-statusline.js",
+    "usage-hook.js"
+  ],
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "claude",
+    "claude-code",
+    "usage",
+    "statusline"
+  ],
+  "author": "Matin Farahani",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MatinMHF/claude-usage-plugin.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MatinMHF/claude-usage-plugin/issues"
+  },
+  "homepage": "https://github.com/MatinMHF/claude-usage-plugin#readme",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.0",
+    "zod": "^3.23.8"
+  }
+}
